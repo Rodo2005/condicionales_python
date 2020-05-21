@@ -161,13 +161,13 @@ def ej3():
     # Utilizar "if" anidados
     if puntaje >= 90:
         print("A")
-    elif puntaje >= 80 and puntaje < 90:
-        print("B")
+    elif puntaje >= 80:   # "and puntaje < 90:"  esta parte de la sentencia no es necesaria
+        print("B")        # aunque no modifica el resultado. Termina siendo redundante.
     elif puntaje >= 70 and puntaje < 80:
         print("C")
     elif puntaje >= 60 and puntaje < 70:
         print("D")
-    elif puntaje > 0 and puntaje < 60:
+    elif puntaje > 0 and puntaje < 60:    
         print("F")
     # otra opcion de estructurar el anidado
     if puntaje >= 90:
@@ -230,3 +230,6 @@ if __name__ == '__main__':
     #ej3()
     #ej4()
 
+     # Mi analisis:
+     #     estimo que en ambos casos se mantiene desigualdad porque en texto
+     #     el numero 7 (siete) empieza con una letra de mayor valor que 5 (cinco)
