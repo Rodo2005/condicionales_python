@@ -182,7 +182,7 @@ def ej4():
     '''
 
     if elegir == 1:
-        contador_1 = 0
+
         texto_alto = ""
         texto_medio = ""
         texto_bajo = ""
@@ -199,11 +199,12 @@ def ej4():
                 texto_bajo = texto_3
             else:
                 texto_alto = texto_3
-        while contador_1 < longitud:
-            contador_1 = 1
-            letra_texto_1 = texto_1[contador_1]
-            letra_texto_2 = texto_2[contador_1]
-            contador_1 += 1
+                contador_1 = 0
+            while contador_1 < longitud:
+                contador_1 = 1
+                letra_texto_1 = texto_1[contador_1]
+                letra_texto_2 = texto_2[contador_1]
+                contador_1 += 1
             if letra_texto_1 == letra_texto_2:
                 return
             elif letra_texto_1 > letra_texto_2:
@@ -235,10 +236,10 @@ def ej4():
                 else:
                         texto_alto = texto_2
                 contador_2 = 1
-            while contador_2 < longitud:
-                letra_texto_1 = texto_1[contador_2]
-                letra_texto_3 = texto_3[contador_2]
-                contador_2 += 1
+                while contador_2 < longitud:
+                    letra_texto_1 = texto_1[contador_2]
+                    letra_texto_3 = texto_3[contador_2]
+                    contador_2 += 1
                 if letra_texto_1 == letra_texto_3:
                     return
                 elif letra_texto_1 > letra_texto_3:
@@ -256,7 +257,7 @@ def ej4():
                         texto_medio = texto_3
                         texto_bajo = texto_1
                 print(texto_alto, texto_medio, texto_bajo)
-                break
+                # break
             else:    
 
                 if letra_texto_2 == letra_texto_3 and letra_texto_2 != letra_texto_1:
@@ -269,10 +270,10 @@ def ej4():
                     else:
                         texto_alto = texto_1
                     contador_3 = 1
-                while contador_3 < longitud:
-                    letra_texto_2 = texto_2[contador_3]
-                    letra_texto_3 = texto_3[contador_3]
-                    contador_3 += 1
+                    while contador_3 < longitud:
+                        letra_texto_2 = texto_2[contador_3]
+                        letra_texto_3 = texto_3[contador_3]
+                        contador_3 += 1
                     if letra_texto_2 == letra_texto_3:
                         return
                     elif letra_texto_2 > letra_texto_3:
@@ -290,7 +291,7 @@ def ej4():
                             texto_medio = texto_3
                             texto_bajo = texto_2 
                     print(texto_alto, texto_medio, texto_bajo)
-                    break
+                    # break
                 else:
 
                     if letra_texto_1 != letra_texto_2 != letra_texto_3:
@@ -329,19 +330,12 @@ def ej4():
                     print(texto_alto, texto_medio, texto_bajo)
                     print("")
                     
-    '''
+    
     if elegir == 2:
-        if (long_texto_1 > long_texto_2):
-            longitud_2 = long_texto_2
-
-        else:
-            longitud_1 = long_texto_1
-            if (longitud > long_texto_3):
-                longitud = long_texto_3
-            else:
-                longitud = longitud
-                print("")
-    '''
+        lista = [texto_1, texto_2, texto_3]
+        lista.sort()
+        print(lista)
+            
 
 
 
