@@ -318,8 +318,9 @@ def ej4():
     
     if elegir == 2:
         lista = [texto_1, texto_2, texto_3]
-        lista.sort()
+        lista.sort(key = len, reverse = True)
         print(lista)
+
             
 def ej5():
     # Ejercicios de práctica con números
@@ -359,5 +360,5 @@ if __name__ == '__main__':
     #ej1()
     #ej2()
     #ej3()
-    #ej4()
-    ej5()
+    ej4()
+    #ej5()
