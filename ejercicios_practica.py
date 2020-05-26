@@ -163,23 +163,9 @@ def ej4():
     print("ingrese '2' para ordenarlas por canttidad de letras")
 
     elegir = int(input())
-        # Aqui se calcula la palabra mas corta y su valor determina el bucle
     long_texto_1 = len(texto_1)
     long_texto_2 = len(texto_2)
     long_texto_3 = len(texto_3)
-    '''
-    
-    if (long_texto_1 > long_texto_2):
-            longitud = long_texto_2
-    else:
-        longitud = long_texto_1
-        if (longitud > long_texto_3):
-            longitud = long_texto_3
-        else:
-            longitud = longitud
-            print("")
-
-    '''
 
     if elegir == 1:
 
@@ -199,9 +185,8 @@ def ej4():
                 texto_bajo = texto_3
             else:
                 texto_alto = texto_3
-                contador_1 = 0
-            while contador_1 < longitud:
                 contador_1 = 1
+            while contador_1 < longitud:
                 letra_texto_1 = texto_1[contador_1]
                 letra_texto_2 = texto_2[contador_1]
                 contador_1 += 1
@@ -336,10 +321,6 @@ def ej4():
         lista.sort()
         print(lista)
             
-
-
-
-
 def ej5():
     # Ejercicios de práctica con números
        
@@ -353,11 +334,30 @@ def ej5():
     En cada caso imprimir en pantalla el resultado  
 
     '''
+    temperatura_1 = 0.0
+    temperatura_2 = 0.0
+    temperatura_3 = 0.0
+    
+    temperatura_1 = float(input("Ingrese un valor de temperatura:\n"))
+    temperatura_2 = float(input("Ingrese un nuevo valor de temperatura:\n"))
+    temperatura_3 = float(input("Ingrse un ultimo valor de temperatura:\n"))
+    promedio = float(temperatura_1 + temperatura_2 + temperatura_3) / 3
+    lista = [temperatura_1, temperatura_2, temperatura_3]
+    lista.sort()
+    print("")
+    print("La temperatura máxima es: ", lista[2], "ºC")
+    print("")
+    print("La temperatura mínima es: ", lista[0], "ºC")
+    print("")
+    print("El promedio de la temperatura es: ", "{0:.2f}".format(promedio), "ºC")
+    print("")
+    
+
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
     #ej1()
     #ej2()
     #ej3()
-    ej4()
-    #ej5()
+    #ej4()
+    ej5()
