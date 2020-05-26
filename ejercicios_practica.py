@@ -167,6 +167,15 @@ def ej4():
     long_texto_2 = len(texto_2)
     long_texto_3 = len(texto_3)
 
+    # ----------------- Inove ----------------------#
+    # Este ejercicio en donde se plantea ordenar las letras alfabéticamente
+    # es tedioso y una de las mejores forrmas de resolverlo es un loop
+    # como planteaste, o usar listas directamente.    
+    # Es bueno ver que hayas utilizado herramientas más complejtas,
+    # en la próxima clase veremos más en detalle los bucles "while", "for"
+    # y las listas!.
+    # ----------------- Inove ----------------------#
+    
     if elegir == 1:
 
         texto_alto = ""
